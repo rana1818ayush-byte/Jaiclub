@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JAICLUB - Official</title>
+<title>JAICLUB</title>
 
 <style>
 body {
@@ -10,23 +10,23 @@ body {
   font-family: 'Segoe UI', sans-serif;
   color: white;
   text-align: center;
+  background: #000;
 }
 
-/* 🔥 BACKGROUND FIX */
-body::before {
-  content: "";
+/* 🔥 PERFECT BACKGROUND FIX */
+.bg {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://imglink.cc/cdn/ExkjErkU2O.png') no-repeat center;
-  background-size: cover;
-  filter: blur(4px);
-  transform: scale(1.05);
+  background: url('https://imglink.cc/cdn/ExkjErkU2O.png') center/cover no-repeat;
+  filter: blur(6px);
+  transform: scale(1.1);
   z-index: -2;
 }
 
-body::after {
-  content: "";
+.overlay {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -34,15 +34,14 @@ body::after {
   z-index: -1;
 }
 
-/* 🔥 TOP BAR */
+/* TOP BAR */
 .topbar {
   display: flex;
   justify-content: space-between;
   padding: 15px;
 }
 
-.topbar .right button {
-  margin-left: 10px;
+.topbar button {
   padding: 8px 15px;
   border-radius: 20px;
   border: none;
@@ -52,8 +51,8 @@ body::after {
 
 /* CONTAINER */
 .container {
-  margin-top: 30px;
   padding: 20px;
+  margin-top: 20px;
 }
 
 /* LOGO */
@@ -62,27 +61,15 @@ body::after {
   border-radius: 20px;
 }
 
-/* TITLE */
-h1 {
-  font-size: 34px;
-  margin: 10px 0;
-}
-
-/* TEXT */
-p {
-  font-size: 15px;
-  opacity: 0.9;
-}
-
 /* BUTTON */
 .btn {
   display: block;
   width: 85%;
-  margin: 12px auto;
+  margin: 10px auto;
   padding: 14px;
-  font-size: 18px;
-  border: none;
   border-radius: 12px;
+  border: none;
+  font-size: 18px;
   color: white;
 }
 
@@ -94,38 +81,33 @@ p {
   background: linear-gradient(45deg, #0088cc, #005577);
 }
 
-/* LIVE WIN BOX */
-.live-win {
+/* 🔥 WIN BOX */
+.win-box {
   margin-top: 20px;
-  font-size: 16px;
-  color: #00ffcc;
-}
-
-/* ABOUT SECTION */
-.about {
-  margin-top: 50px;
-  padding: 20px;
-  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  background: rgba(255,255,255,0.08);
   border-radius: 15px;
+  backdrop-filter: blur(10px);
 }
 
-/* BG TEXT */
-.bg-text {
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-  font-size: 30px;
-  color: rgba(255,255,255,0.05);
+/* LIST */
+.win-item {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #00ffcc;
 }
 </style>
 </head>
 
 <body>
 
-<!-- 🔝 TOP BAR -->
+<div class="bg"></div>
+<div class="overlay"></div>
+
+<!-- TOP BAR -->
 <div class="topbar">
   <div>JAICLUB</div>
-  <div class="right">
+  <div>
     <button onclick="window.location.href='https://yourloginlink.com'">Login</button>
     <button onclick="window.location.href='https://yourregisterlink.com'">Register</button>
   </div>
@@ -138,19 +120,12 @@ p {
     <img src="https://imglink.cc/cdn/KOY2ZnIq2-.jpg">
   </div>
 
-  <!-- TITLE -->
   <h1>JAICLUB</h1>
 
-  <!-- PROFESSIONAL TEXT -->
-  <p>
-  Experience premium gaming with JAICLUB. Fast withdrawals, secure platform and daily rewards designed for smart players.
-  </p>
+  <p>Premium gaming platform with fast withdrawals and daily rewards.</p>
 
-  <p style="color:#00ffcc;">
-  💰 Earn Real Money Daily 💰
-  </p>
+  <p style="color:#00ffcc;">💰 Earn Real Money Daily 💰</p>
 
-  <!-- BUTTONS -->
   <a href="https://yourregisterlink.com">
     <button class="btn register">Register Now</button>
   </a>
@@ -161,33 +136,39 @@ p {
 
   <p>🌐 DAILY FREE GIFT CODE</p>
 
-  <!-- 🔥 LIVE WIN -->
-  <div class="live-win" id="winText">
-    Someone just won ₹5000 🎉
-  </div>
-
-  <!-- ABOUT -->
-  <div class="about">
-    <h2>About JAICLUB</h2>
-    <p>
-    JAICLUB is a fast-growing gaming platform where users enjoy multiple games and win rewards daily. 
-    With secure transactions and instant withdrawals, players trust JAICLUB for real earning opportunities.
-    </p>
+  <!-- 🔥 WIN BOX -->
+  <div class="win-box">
+    <h3>🔥 Live Winning</h3>
+    <div id="winList"></div>
   </div>
 
 </div>
 
-<div class="bg-text">JAICLUB • EARN MONEY • JAICLUB</div>
-
-<!-- 🔥 RANDOM WIN SCRIPT -->
+<!-- 🔥 SCRIPT -->
 <script>
-function updateWin() {
-  let amount = Math.floor(Math.random() * 9000) + 1000;
-  document.getElementById("winText").innerText =
-    "Someone just won ₹" + amount + " 🎉";
+function randomName() {
+  let letters = "abcdefghijklmnopqrstuvwxyz";
+  let first = letters[Math.floor(Math.random() * letters.length)];
+  let last = Math.floor(Math.random() * 9);
+  return first + "******" + last;
 }
 
-setInterval(updateWin, 2000);
+function randomAmount() {
+  return Math.floor(Math.random() * 9000) + 500;
+}
+
+function updateWins() {
+  let html = "";
+  for (let i = 0; i < 5; i++) {
+    html += "<div class='win-item'>" +
+      randomName() + " won ₹" + randomAmount() +
+      "</div>";
+  }
+  document.getElementById("winList").innerHTML = html;
+}
+
+setInterval(updateWins, 3000);
+updateWins();
 </script>
 
 </body>
