@@ -2,58 +2,70 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>91 Club - Official</title>
+<title>JAICLUB - Official</title>
 
 <style>
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   text-align: center;
   color: white;
+  overflow: hidden;
 
-  background: linear-gradient(rgba(255,0,0,0.8), rgba(0,0,0,0.9)),
-              url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da');
-  background-size: cover;
+  background: radial-gradient(circle at center, #1a1a2e, #000);
 }
 
-/* Top bar */
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+/* Glow background text */
+.bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: rgba(255,255,255,0.05);
+  white-space: nowrap;
+  z-index: 0;
 }
 
-.topbar button {
-  padding: 8px 15px;
-  border: none;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.2);
-  color: white;
+/* Floating glow */
+.glow {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: purple;
+  filter: blur(120px);
+  top: 20%;
+  left: 10%;
 }
 
 /* Logo */
 .logo {
-  margin-top: 40px;
+  margin-top: 60px;
+  position: relative;
+  z-index: 2;
 }
 
 .logo img {
-  width: 120px;
+  width: 140px;
   border-radius: 20px;
 }
 
-/* Text */
+/* Title */
 h1 {
   margin: 10px 0;
+  font-size: 30px;
 }
 
+/* Description */
 p {
   padding: 0 20px;
   font-size: 14px;
+  opacity: 0.8;
 }
 
 /* Bonus text */
 .bonus {
-  color: yellow;
+  color: #00ffcc;
   font-size: 22px;
   font-weight: bold;
   margin: 20px 0;
@@ -61,43 +73,60 @@ p {
 
 /* Button */
 .btn {
-  background: green;
-  color: white;
-  padding: 15px 30px;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 15px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 18px;
+  color: white;
+}
+
+/* Register */
+.register {
+  background: linear-gradient(45deg, #00ffcc, #00ccff);
+}
+
+/* Telegram */
+.telegram {
+  background: linear-gradient(45deg, #0088cc, #005577);
 }
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-  <div>91 CLUB</div>
-  <div>
-    <button onclick="window.location.href='https://yourloginlink.com'">Log in</button>
-  </div>
-</div>
+<div class="bg-text">JAICLUB • EARN MONEY • JAICLUB</div>
+<div class="glow"></div>
 
 <div class="logo">
   <img src="logo.png">
 </div>
 
-<h1>91 Club</h1>
+<h1>JAICLUB</h1>
 
 <p>
-Welcome to 91 Club Game. Login or Register Now and Play various games 
-to make money like Color Prediction, WinGo, Aviator and more.
+Join JAICLUB now and start earning with exciting games. Fast withdrawals, daily bonuses and 24x7 support available.
 </p>
 
 <div class="bonus">
-Register Now & Get Rs.500 Bonus
+💰 Earn Real Money Daily 💰
 </div>
 
+<!-- Register Button -->
 <a href="https://yourregisterlink.com">
-  <button class="btn">Register Now</button>
+  <button class="btn register">Register Now</button>
 </a>
+
+<!-- Telegram Button -->
+<a href="https://t.me/yourchannel">
+  <button class="btn telegram">Join Telegram</button>
+</a>
+
+<p style="margin-top:15px; font-size:16px;">
+🌐 DAILY FREE GIFT CODE
+</p>
 
 </body>
 </html>
