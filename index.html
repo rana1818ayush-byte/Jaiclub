@@ -8,79 +8,80 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  text-align: center;
   color: white;
-  overflow: hidden;
-
-  background: radial-gradient(circle at center, #1a1a2e, #000);
+  text-align: center;
+  overflow-x: hidden;
 }
 
-/* Glow background text */
-.bg-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 60px;
-  color: rgba(255,255,255,0.05);
-  white-space: nowrap;
-  z-index: 0;
+/* 🔥 Background Layer */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  background: url('https://imglink.cc/cdn/ExkjErkU2O.png') no-repeat center;
+  background-size: cover;
+
+  filter: blur(8px);
+  transform: scale(1.1);
+
+  z-index: -2;
 }
 
-/* Floating glow */
-.glow {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: purple;
-  filter: blur(120px);
-  top: 20%;
-  left: 10%;
+/* 🔥 Dark Overlay */
+body::after {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+  margin-top: 60px;
 }
 
 /* Logo */
-.logo {
-  margin-top: 60px;
-  position: relative;
-  z-index: 2;
-}
-
 .logo img {
   width: 140px;
   border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
 }
 
 /* Title */
 h1 {
+  font-size: 34px;
   margin: 10px 0;
-  font-size: 30px;
 }
 
 /* Description */
 p {
-  padding: 0 20px;
-  font-size: 14px;
-  opacity: 0.8;
+  font-size: 15px;
+  opacity: 0.9;
 }
 
-/* Bonus text */
-.bonus {
+/* Glow Text */
+.glow-text {
+  font-size: 18px;
+  margin: 15px 0;
   color: #00ffcc;
-  font-size: 22px;
-  font-weight: bold;
-  margin: 20px 0;
 }
 
-/* Button */
+/* Buttons */
 .btn {
   display: block;
-  width: 80%;
-  margin: 10px auto;
+  width: 85%;
+  margin: 12px auto;
   padding: 15px;
+  font-size: 18px;
   border: none;
   border-radius: 12px;
-  font-size: 18px;
   color: white;
+  cursor: pointer;
 }
 
 /* Register */
@@ -92,41 +93,65 @@ p {
 .telegram {
   background: linear-gradient(45deg, #0088cc, #005577);
 }
+
+/* Background Text */
+.bg-text {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  font-size: 40px;
+  color: rgba(255,255,255,0.05);
+}
+
+/* Scroll Smooth */
+html {
+  scroll-behavior: smooth;
+}
 </style>
 </head>
 
 <body>
 
+<div class="container">
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="https://imglink.cc/cdn/KOY2ZnIq2-.jpg">
+  </div>
+
+  <!-- Title -->
+  <h1>JAICLUB</h1>
+
+  <!-- Description -->
+  <p>
+  Join JAICLUB now and start earning money with exciting games.
+  Fast withdrawal & daily bonuses available.
+  </p>
+
+  <!-- Highlight -->
+  <div class="glow-text">
+  💰 Earn Real Money Daily 💰
+  </div>
+
+  <!-- Register Button -->
+  <a href="https://yourregisterlink.com">
+    <button class="btn register">Register Now</button>
+  </a>
+
+  <!-- Telegram Button -->
+  <a href="https://t.me/yourchannel">
+    <button class="btn telegram">Join Telegram</button>
+  </a>
+
+  <!-- Telegram Text -->
+  <p style="margin-top:15px; font-size:16px;">
+  🌐 DAILY FREE GIFT CODE
+  </p>
+
+</div>
+
+<!-- Light Background Branding -->
 <div class="bg-text">JAICLUB • EARN MONEY • JAICLUB</div>
-<div class="glow"></div>
-
-<div class="logo">
-  <img src="logo.png">
-</div>
-
-<h1>JAICLUB</h1>
-
-<p>
-Join JAICLUB now and start earning with exciting games. Fast withdrawals, daily bonuses and 24x7 support available.
-</p>
-
-<div class="bonus">
-💰 Earn Real Money Daily 💰
-</div>
-
-<!-- Register Button -->
-<a href="https://yourregisterlink.com">
-  <button class="btn register">Register Now</button>
-</a>
-
-<!-- Telegram Button -->
-<a href="https://t.me/yourchannel">
-  <button class="btn telegram">Join Telegram</button>
-</a>
-
-<p style="margin-top:15px; font-size:16px;">
-🌐 DAILY FREE GIFT CODE
-</p>
 
 </body>
 </html>
