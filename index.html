@@ -4,20 +4,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JAICLUB</title>
 
+<!-- 🔥 GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: white;
   text-align: center;
   background: #000;
 }
 
-/* 🔥 PERFECT BACKGROUND FIX */
+/* BACKGROUND */
 .bg {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: url('https://imglink.cc/cdn/ExkjErkU2O.png') center/cover no-repeat;
@@ -38,15 +39,23 @@ body {
 .topbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px;
 }
 
+/* 🔥 LOGO IMAGE TOP */
+.top-logo img {
+  height: 40px;
+}
+
+/* BUTTONS TOP */
 .topbar button {
   padding: 8px 15px;
   border-radius: 20px;
   border: none;
   background: rgba(255,255,255,0.2);
   color: white;
+  font-weight: 500;
 }
 
 /* CONTAINER */
@@ -55,10 +64,21 @@ body {
   margin-top: 20px;
 }
 
-/* LOGO */
+/* CENTER LOGO */
 .logo img {
   width: 120px;
   border-radius: 20px;
+}
+
+/* TEXT */
+h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 14px;
 }
 
 /* BUTTON */
@@ -69,10 +89,17 @@ body {
   padding: 14px;
   border-radius: 12px;
   border: none;
-  font-size: 18px;
+  font-size: 17px;
   color: white;
+  text-decoration: none; /* 🔥 underline remove */
 }
 
+.btn:focus,
+.btn:active {
+  text-decoration: none;
+}
+
+/* BUTTON STYLE */
 .register {
   background: linear-gradient(45deg, #00ffcc, #00ccff);
 }
@@ -81,7 +108,7 @@ body {
   background: linear-gradient(45deg, #0088cc, #005577);
 }
 
-/* 🔥 WIN BOX */
+/* WIN BOX */
 .win-box {
   margin-top: 20px;
   padding: 15px;
@@ -90,10 +117,9 @@ body {
   backdrop-filter: blur(10px);
 }
 
-/* LIST */
 .win-item {
   margin: 5px 0;
-  font-size: 15px;
+  font-size: 14px;
   color: #00ffcc;
 }
 </style>
@@ -104,18 +130,24 @@ body {
 <div class="bg"></div>
 <div class="overlay"></div>
 
-<!-- TOP BAR -->
+<!-- 🔝 TOP BAR -->
 <div class="topbar">
-  <div>JAICLUB</div>
+
+  <!-- 🔥 IMAGE LOGO -->
+  <div class="top-logo">
+    <img src="https://picsart.onelink.me/VgrZ/n4vai1wu">
+  </div>
+
   <div>
     <button onclick="window.location.href='https://yourloginlink.com'">Login</button>
     <button onclick="window.location.href='https://yourregisterlink.com'">Register</button>
   </div>
+
 </div>
 
 <div class="container">
 
-  <!-- LOGO -->
+  <!-- CENTER LOGO -->
   <div class="logo">
     <img src="https://imglink.cc/cdn/KOY2ZnIq2-.jpg">
   </div>
@@ -126,17 +158,14 @@ body {
 
   <p style="color:#00ffcc;">💰 Earn Real Money Daily 💰</p>
 
-  <a href="https://yourregisterlink.com">
-    <button class="btn register">Register Now</button>
-  </a>
+  <!-- 🔥 BUTTON FIX (NO UNDERLINE) -->
+  <a href="https://yourregisterlink.com" class="btn register">Register Now</a>
 
-  <a href="https://t.me/yourchannel">
-    <button class="btn telegram">Join Telegram</button>
-  </a>
+  <a href="https://t.me/yourchannel" class="btn telegram">Join Telegram</a>
 
   <p>🌐 DAILY FREE GIFT CODE</p>
 
-  <!-- 🔥 WIN BOX -->
+  <!-- WIN BOX -->
   <div class="win-box">
     <h3>🔥 Live Winning</h3>
     <div id="winList"></div>
@@ -144,7 +173,6 @@ body {
 
 </div>
 
-<!-- 🔥 SCRIPT -->
 <script>
 function randomName() {
   let letters = "abcdefghijklmnopqrstuvwxyz";
