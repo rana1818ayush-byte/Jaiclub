@@ -32,7 +32,7 @@
       width: 100%;
       height: 100%;
       background: url('https://cdn.phototourl.com/free/2026-03-26-d8430055-47bb-4d50-afd9-97b88048ad68.png') center/cover no-repeat;
-      filter: blur(4px) brightness(0.85);   /* Blur kam kiya */
+      filter: blur(4px) brightness(0.85);
       transform: scale(1.10);
       z-index: -3;
     }
@@ -164,14 +164,15 @@
       margin: 32px 0 14px;
     }
 
-    /* Games Banner */
+    /* Games Banners */
     .games-banner {
       width: 100%;
       max-width: 420px;
-      margin: 30px auto 15px;
+      margin: 25px auto 15px;
       border-radius: 15px;
       box-shadow: 0 10px 30px rgba(255,215,0,0.4);
       overflow: hidden;
+      display: block;
     }
 
     .games-banner img {
@@ -180,9 +181,27 @@
       display: block;
     }
 
-    /* Disclaimer - No Black Background */
+    /* New Download Button Style Banner */
+    .download-banner {
+      width: 88%;
+      max-width: 380px;
+      height: 85px;
+      margin: 20px auto 25px;
+      background: url('https://cdn.phototourl.com/free/2026-03-26-5bdaa1d2-8836-4fdd-aa1e-eea5d3d46ef0.png') center/contain no-repeat;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(255,215,0,0.5);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .download-banner:hover {
+      transform: scale(1.03);
+    }
+
+    /* Disclaimer */
     .disclaimer {
-      background: rgba(0,0,0,0.45);   /* Light transparent dark */
+      background: rgba(0,0,0,0.45);
       color: #ddd;
       padding: 40px 22px;
       text-align: left;
@@ -243,10 +262,13 @@
     
     <p>Additionally, Jai Club offers attractive referral programs, daily bonuses, and VIP benefits that multiply your earning potential. Whether you want quick entertainment or consistent earnings, this platform adapts to your gaming goals perfectly.</p>
 
-    <!-- Games Banner -->
+    <!-- First Games Banner -->
     <div class="games-banner">
       <img src="https://cdn.phototourl.com/free/2026-03-26-b374ca46-9af9-4073-b5f3-91478c078609.jpg" alt="Types of Games Banner">
     </div>
+
+    <!-- New Banner (Button Style) - Types of Games ke upar -->
+    <div onclick="window.location.href='https://yourdownloadlink.com'" class="download-banner"></div>
 
     <h2>Types of Games Available on Jai Club</h2>
     <p>Before starting your gaming journey, explore the exciting game categories available:</p>
