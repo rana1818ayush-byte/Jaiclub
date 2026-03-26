@@ -26,13 +26,13 @@
       background: #000;
     }
 
-    /* Main Background - Your new image with blur */
+    /* Main Background - Less Blur */
     .bg {
       position: fixed;
       width: 100%;
       height: 100%;
       background: url('https://cdn.phototourl.com/free/2026-03-26-d8430055-47bb-4d50-afd9-97b88048ad68.png') center/cover no-repeat;
-      filter: blur(7px) brightness(0.85);
+      filter: blur(4px) brightness(0.85);   /* Blur kam kiya */
       transform: scale(1.10);
       z-index: -3;
     }
@@ -135,17 +135,6 @@
       font-weight: 600;
     }
 
-    .download-btn {
-      display: block;
-      width: 88%;
-      margin: 18px auto;
-      height: 78px;
-      background: url('Picsart_26-03-26_23-10-51-406.png') center/contain no-repeat;
-      border: none;
-      cursor: pointer;
-      filter: drop-shadow(0 10px 20px rgba(255,215,0,0.6));
-    }
-
     /* Description Section */
     .desc {
       background: rgba(0,0,0,0.78);
@@ -175,7 +164,7 @@
       margin: 32px 0 14px;
     }
 
-    /* New Games Image Section - Above "Types of Games" */
+    /* Games Banner */
     .games-banner {
       width: 100%;
       max-width: 420px;
@@ -191,9 +180,9 @@
       display: block;
     }
 
-    /* Disclaimer */
+    /* Disclaimer - No Black Background */
     .disclaimer {
-      background: rgba(0,0,0,0.85);
+      background: rgba(0,0,0,0.45);   /* Light transparent dark */
       color: #ddd;
       padding: 40px 22px;
       text-align: left;
@@ -232,8 +221,6 @@
 
     <a href="https://yourregisterlink.com" class="btn register">Register Now - Get ₹500 Bonus</a>
 
-    <button onclick="window.location.href='https://yourregisterlink.com'" class="download-btn"></button>
-
     <a href="https://t.me/+a6vEBw9lH0lhMDg1" class="btn telegram">
       <i class="fa-brands fa-telegram"></i> JOIN FOR DAILY FREE GIFT CODE
     </a>
@@ -256,7 +243,7 @@
     
     <p>Additionally, Jai Club offers attractive referral programs, daily bonuses, and VIP benefits that multiply your earning potential. Whether you want quick entertainment or consistent earnings, this platform adapts to your gaming goals perfectly.</p>
 
-    <!-- Your New Games Image Here (Above Types of Games) -->
+    <!-- Games Banner -->
     <div class="games-banner">
       <img src="https://cdn.phototourl.com/free/2026-03-26-b374ca46-9af9-4073-b5f3-91478c078609.jpg" alt="Types of Games Banner">
     </div>
