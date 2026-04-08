@@ -18,7 +18,7 @@
 
   <meta name="google-site-verification" content="OYeiByhudpfpja42qu_lvynbqE8VTh-ynqc-XIJTtrY" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jai Club Skill Games | Play Exciting Skill-Based Games</title>
+  <title>Jai Club - Fun Online Games | Play Exciting Games Now</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
@@ -241,25 +241,24 @@
       <img src="https://imglink.cc/cdn/KOY2ZnIq2-.jpg">
     </div>
     <h1>JAICLUB</h1>
-    <p>Premium Skill Gaming Platform • Test Your Skills • Daily Challenges</p>
+    <p>Fun Online Games • Exciting Challenges • Pure Entertainment</p>
 
     <a href="https://t.me/+a6vEBw9lH0lhMDg1" class="btn telegram">
-      <i class="fa-brands fa-telegram"></i> JOIN FOR DAILY FREE GIFT CODE
+      <i class="fa-brands fa-telegram"></i> JOIN OUR COMMUNITY
     </a>
 
     <div class="win-box">
-      <h3>🔥 Top Skill Players</h3>
+      <h3>🔥 Active Players</h3>
       <div id="winList"></div>
     </div>
   </div>
 
-  
-
+  <!-- 
   <!-- Disclaimer -->
   <section class="disclaimer">
     <h2>Important Note</h2>
     <p>
-      This website is an affiliate partner and not the official platform. Play responsibly for entertainment purposes only.
+      This website is an affiliate partner and not the official platform. All games are for entertainment purposes only. Play responsibly.
     </p>
   </section>
 
@@ -269,14 +268,10 @@
       return letters[Math.floor(Math.random()*letters.length)] + "******" + Math.floor(Math.random()*9);
     }
 
-    function randomAmount() {
-      return Math.floor(Math.random()*12000)+800;
-    }
-
     function updateWins() {
       let html="";
       for(let i=0; i<5; i++){
-        html += "<div class='win-item'>"+randomName()+" excelled in skill game</div>";
+        html += "<div class='win-item'>"+randomName()+" is playing right now</div>";
       }
       document.getElementById("winList").innerHTML=html;
     }
