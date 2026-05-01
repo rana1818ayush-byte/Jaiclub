@@ -12,7 +12,7 @@
     gtag('event', 'conversion', {'send_to': 'AW-18052944555/hGG-CJbS_ZscEKulqKBD'});
   </script>
   <!-- Google tag (gtag.js) - AW-10940226121 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10940226121"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GW-10940226121"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -29,8 +29,8 @@
   </script>
 
   <!-- Meta Tags for SEO -->
-  <meta name="description" content="Jai Club - Best online gaming platform with fun games, exciting challenges, and huge rewards. Play now at Jai Club, login or register for unlimited entertainment.">
-  <meta name="keywords" content="Jai Club, Jai Club login, Jai Club register, Jai Club games, what is Jai Club, Jai Club online, play games, fun games, Jai Club app, Jai Club official">
+  <meta name="description" content="Jai Club - Get ₹100 Gift Code instantly & ₹500 Signup Bonus! Play exciting online games, win real rewards. Join now and claim your bonus.">
+  <meta name="keywords" content="Jai Club, Jai Club login, Jai Club register, ₹100 gift code, ₹500 signup bonus, Jai Club bonus, online games, play and win">
   <meta name="author" content="Jai Club">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="OYeiByhudpfpja42qu_lvynbqE8VTh-ynqc-XIJTtrY" />
@@ -42,7 +42,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="https://cdn.phototourl.com/free/2026-03-27-849affa6-4458-4fcd-98e1-572fd0a5b527.png?v=20260329">
   <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.phototourl.com/free/2026-03-27-849affa6-4458-4fcd-98e1-572fd0a5b527.png?v=20260329">
 
-  <title>Jai Club - Best Online Fun Games & Entertainment Platform | Play Now</title>
+  <title>Jai Club - Get ₹100 Gift Code & ₹500 Signup Bonus | Play & Win</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
@@ -64,7 +64,7 @@
       overflow-x: hidden;
     }
 
-    /* Background with better gradient */
+    /* Background */
     .bg-gradient {
       position: fixed;
       top: 0;
@@ -168,35 +168,66 @@
       margin-bottom: 25px;
     }
 
-    .telegram-btn {
+    /* Bonus Button Group */
+    .bonus-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 25px 0 20px;
+    }
+
+    .bonus-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 12px;
-      background: linear-gradient(95deg, #0088cc, #006699);
-      padding: 14px 35px;
-      border-radius: 50px;
-      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 60px;
+      font-weight: 800;
       font-size: 18px;
-      margin: 15px 0 25px;
-      transition: 0.3s;
       border: none;
-      color: white;
       cursor: pointer;
-      box-shadow: 0 8px 20px rgba(0, 136, 204, 0.4);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     }
 
-    .telegram-btn i {
+    .bonus-btn:first-child {
+      background: linear-gradient(95deg, #00a86b, #008455);
+      color: white;
+      border: 1px solid rgba(255,215,0,0.6);
+    }
+
+    .bonus-btn:first-child:hover {
+      transform: scale(1.03);
+      background: linear-gradient(95deg, #00c47a, #00995e);
+      box-shadow: 0 12px 28px rgba(0, 168, 107, 0.5);
+    }
+
+    .bonus-btn:last-child {
+      background: linear-gradient(95deg, #FF8800, #FF5500);
+      color: white;
+      border: 1px solid #FFD700;
+    }
+
+    .bonus-btn:last-child:hover {
+      transform: scale(1.03);
+      background: linear-gradient(95deg, #ff9a2e, #ff6622);
+      box-shadow: 0 12px 28px rgba(255, 85, 0, 0.5);
+    }
+
+    .bonus-btn i {
       font-size: 24px;
     }
 
-    .telegram-btn:hover {
-      transform: scale(1.03);
-      background: linear-gradient(95deg, #00a2e0, #0077aa);
-      box-shadow: 0 12px 28px rgba(0, 136, 204, 0.6);
+    .small-note {
+      font-size: 13px;
+      color: #ffd966;
+      margin-top: 8px;
     }
 
-    /* Live Activity */
+    /* Activity Card */
     .activity-card {
       background: rgba(20, 20, 45, 0.7);
       backdrop-filter: blur(6px);
@@ -232,7 +263,7 @@
       font-size: 15px;
     }
 
-    /* SEO Description Sections */
+    /* SEO Sections */
     .seo-section {
       background: rgba(0, 0, 0, 0.65);
       backdrop-filter: blur(4px);
@@ -315,14 +346,10 @@
     @media (max-width: 680px) {
       h1 { font-size: 32px; }
       .top-buttons button { padding: 8px 18px; font-size: 13px; }
+      .bonus-btn { padding: 10px 20px; font-size: 15px; }
+      .bonus-btn i { font-size: 18px; }
       .seo-section h2 { font-size: 24px; }
       .container { padding: 15px; }
-    }
-
-    .btn-link {
-      text-decoration: none;
-      display: inline-block;
-      width: auto;
     }
   </style>
 </head>
@@ -345,107 +372,125 @@
 <div class="container">
   <div class="hero">
     <div class="logo-center">
-      <img src="https://imglink.cc/cdn/KOY2ZnIq2-.jpg" alt="Jai Club Game Platform">
+      <img src="https://imglink.cc/cdn/KOY2ZnIq2-.jpg" alt="Jai Club Bonus Offer">
     </div>
     <h1>JAICLUB</h1>
-    <p class="tagline">🎮 Play, Compete, Win - Ultimate Online Gaming Destination 🏆</p>
-    <button onclick="window.open('https://t.me/+a6vEBw9lH0lhMDg1', '_blank')" class="telegram-btn">
-      <i class="fab fa-telegram"></i> Join Telegram Community
-    </button>
+    <p class="tagline">🎮 Play, Win & Grab Exciting Rewards 🎁</p>
+    
+    <!-- NEW BONUS BUTTONS: ₹100 Gift Code & ₹500 Signup Bonus -->
+    <div class="bonus-buttons">
+      <button onclick="window.open('https://t.me/+a6vEBw9lH0lhMDg1', '_blank')" class="bonus-btn">
+        <i class="fab fa-telegram"></i> Get ₹100 Gift Code
+      </button>
+      <button onclick="window.open('https://www.jaiclub05.com/#/register?invitationCode=11863101998', '_blank')" class="bonus-btn">
+        <i class="fas fa-gift"></i> Signup ₹500 Bonus
+      </button>
+    </div>
+    <div class="small-note">⚡ Limited offer for new users - Claim your bonus now!</div>
 
+    <!-- Live Activity Card -->
     <div class="activity-card">
-      <h3><i class="fas fa-fire"></i> Live Activity <i class="fas fa-users"></i></h3>
+      <h3><i class="fas fa-trophy"></i> Live Wins <i class="fas fa-users"></i></h3>
       <div id="winList" class="win-list"></div>
     </div>
   </div>
 
-  <!-- SEO CONTENT: Jai Club Info, Login, Features -->
+  <!-- SEO CONTENT: Jai Club Info, Login, Features with Bonus Keywords -->
   <div class="seo-section">
-    <h2>What is Jai Club?</h2>
-    <p><strong>Jai Club</strong> is a premier online gaming platform that brings together players from around the world for an immersive, fun, and rewarding experience. Whether you love action-packed challenges, puzzle games, or casual entertainment, Jai Club offers a diverse collection of games to suit every taste. The platform is designed to provide seamless gameplay, fair competition, and exciting rewards. With thousands of active users daily, Jai Club has quickly become a favorite destination for gamers seeking both relaxation and adrenaline.</p>
+    <h2>What is Jai Club? 🎯</h2>
+    <p><strong>Jai Club</strong> is India's fastest-growing online gaming destination where entertainment meets real rewards. Now, new users can claim an exclusive <strong>₹100 Gift Code</strong> by joining our Telegram community, plus a massive <strong>₹500 Signup Bonus</strong> upon registration! Experience thrilling games, live competitions, and instant bonuses. Jai Club brings you a secure, fair, and high-energy platform to play, compete, and win exciting prizes daily.</p>
     
-    <h2>Jai Club Login & Registration – Quick & Easy Access</h2>
-    <p>Getting started with Jai Club is simple. Click the <strong>Login</strong> or <strong>Register</strong> button at the top right. The registration process takes just a minute – fill in your details, verify your account, and you're ready to dive into the world of thrilling games. Existing users can directly <strong>Jai Club login</strong> using their credentials. Our invitation code <strong>11863101998</strong> unlocks exclusive bonuses and fast-track access. Join the family and enjoy non-stop entertainment!</p>
-    
-    <h3>Why Choose Jai Club?</h3>
+    <h2>🔥 How to Claim ₹100 Gift Code & ₹500 Signup Bonus?</h2>
+    <p><strong>Step 1:</strong> Click on <strong>"Get ₹100 Gift Code"</strong> button and join our official Telegram channel. <br>
+    <strong>Step 2:</strong> Click <strong>"Signup ₹500 Bonus"</strong> button and complete your registration using invitation code <strong>11863101998</strong>.<br>
+    <strong>Step 3:</strong> Verify your account and get ₹500 bonus credited instantly.<br>
+    <strong>Step 4:</strong> Use the ₹100 gift code received on Telegram to unlock additional perks.<br>
+    <strong>Step 5:</strong> Start playing your favorite games and withdraw your winnings!</p>
+
+    <h3>Why Jai Club is the Best Choice for Gamers?</h3>
     <ul>
-      <li>✅ <strong>100+ Engaging Games</strong> – From arcade to strategy, there’s something for everyone.</li>
-      <li>✅ <strong>Secure & Trusted Platform</strong> – Advanced encryption and fair play policies.</li>
-      <li>✅ <strong>Daily Rewards & Bonuses</strong> – Login every day to earn amazing prizes.</li>
-      <li>✅ <strong>24/7 Community Support</strong> – Active Telegram group and customer care.</li>
-      <li>✅ <strong>Mobile Friendly</strong> – Play on any device, anytime, anywhere.</li>
+      <li>✅ <strong>Instant ₹500 Welcome Bonus</strong> – No hidden terms, real bonus on signup.</li>
+      <li>✅ <strong>Telegram ₹100 Gift Code</strong> – Extra cash for community members.</li>
+      <li>✅ <strong>100+ Engaging Games</strong> – Action, puzzle, arcade, and more.</li>
+      <li>✅ <strong>Fast Withdrawals</strong> – Secure and quick payout system.</li>
+      <li>✅ <strong>24/7 Support</strong> – Dedicated helpdesk & active Telegram group.</li>
+      <li>✅ <strong>Daily Leaderboards & Tournaments</strong> – Compete and rise to the top.</li>
     </ul>
 
     <div class="games-highlight">
-      <span class="game-badge"><i class="fas fa-dice-d6"></i> Spin & Win</span>
-      <span class="game-badge"><i class="fas fa-crown"></i> Battle Arena</span>
-      <span class="game-badge"><i class="fas fa-puzzle-piece"></i> Puzzle Masters</span>
-      <span class="game-badge"><i class="fas fa-tachometer-alt"></i> Speed Racer</span>
+      <span class="game-badge"><i class="fas fa-dollar-sign"></i> ₹500 Bonus</span>
+      <span class="game-badge"><i class="fab fa-telegram"></i> ₹100 Gift</span>
+      <span class="game-badge"><i class="fas fa-gamepad"></i> 150+ Games</span>
+      <span class="game-badge"><i class="fas fa-chart-line"></i> Daily Wins</span>
     </div>
 
-    <h2>How to Get Started on Jai Club?</h2>
-    <p>Step 1: Click on the <strong>Register</strong> button and fill out the simple sign-up form.<br>
-    Step 2: Use invitation code <strong>11863101998</strong> for extra starter benefits.<br>
-    Step 3: Explore the game lobby, pick your favorite game, and start playing.<br>
-    Step 4: Invite friends, climb the leaderboards, and earn real recognition.<br>
-    Step 5: Withdraw your winnings and enjoy the thrill of victory!</p>
+    <h2>Jai Club Login & Registration – Quick Guide</h2>
+    <p>Existing users can quickly access their account via <strong>Jai Club login</strong> option at the top. New players must register using the <strong>Signup ₹500 Bonus</strong> button. After registration, you can use the same credentials to log in anytime. Remember to use the invitation code <strong>11863101998</strong> to activate your welcome bonus. The process is fast, secure, and mobile-friendly.</p>
 
-    <h2>Jai Club Official Community</h2>
-    <p>Connect with thousands of players on our official Telegram channel. Discuss strategies, share your wins, get updates about new games, and participate in exclusive tournaments. Our community is vibrant, friendly, and always ready to welcome new members. <strong>Join our Telegram group</strong> using the button above and never miss out on exciting news and limited-time events.</p>
+    <h2>What Games Can You Play at Jai Club?</h2>
+    <p>From classic card games to modern arcade challenges, Jai Club offers a massive library. Popular categories include: <strong>Spin to Win, Rummy, Fantasy Leagues, Quick Ludo, Racing Battles, Trivia Quiz,</strong> and exclusive <strong>Jackpot Slots</strong>. New games are added weekly, ensuring endless entertainment and fresh opportunities to win big.</p>
 
-    <h2>Is Jai Club Safe and Legit?</h2>
-    <p>Absolutely! Jai Club operates under strict guidelines to ensure all games are fair and transparent. We use certified random number generators (RNG) and adhere to responsible gaming practices. Our platform is regularly audited to maintain the highest standards of integrity. Millions of satisfied players trust Jai Club for their daily entertainment. Play responsibly and enjoy the experience.</p>
+    <h2>Telegram Community – Get ₹100 Gift Code Instantly</h2>
+    <p>Our Telegram family is growing every day! When you click <strong>"Get ₹100 Gift Code"</strong>, you'll be redirected to the official Jai Club Telegram channel. There, you'll find the gift code, daily bonus links, contest alerts, and support from admins. Don’t miss out on flash giveaways and exclusive promotions only for Telegram members.</p>
+
+    <h2>Is Jai Club Safe & Legit? Absolutely.</h2>
+    <p>Jai Club operates under strict gaming regulations, uses RNG-certified systems, and ensures 100% data encryption. Thousands of active players trust us for fair play and timely payouts. We promote responsible gaming and provide self-help tools if needed. Your winnings are safe, and your personal information is never shared. Play with confidence at Jai Club.</p>
     
-    <h2>Tips to Maximize Your Fun</h2>
-    <p>✔️ Set a daily gaming schedule to stay consistent.<br>
-    ✔️ Join tournaments to test your skills against the best.<br>
-    ✔️ Refer friends using your unique code and get extra rewards.<br>
-    ✔️ Follow our Telegram announcements for flash bonuses.<br>
-    ✔️ Try different game genres to discover hidden talents.</p>
+    <h2>Pro Tips to Maximize Your Bonus</h2>
+    <p>✔️ Use the ₹500 Signup bonus to explore different games without risk.<br>
+    ✔️ Join Telegram and claim the ₹100 Gift Code – combine it with other bonuses.<br>
+    ✔️ Invite friends using your referral link to earn additional cash rewards.<br>
+    ✔️ Play daily to climb the leaderboard and win weekly prize pools.<br>
+    ✔️ Follow game-specific strategies shared in our Telegram group.</p>
   </div>
 
-  <!-- Official disclaimer -->
+  <!-- Important Disclaimer -->
   <div class="disclaimer">
-    <h3><i class="fas fa-info-circle"></i> Important Disclaimer</h3>
-    <p>Jai Club is an independent entertainment platform. All games are intended for users 18+ and purely for entertainment. This website is an affiliate partner and not the official corporate entity. Please ensure you play responsibly and within your limits. No real-money gambling is guaranteed; winnings refer to in-game virtual rewards or promotions as per terms and conditions. Terms apply.</p>
+    <h3><i class="fas fa-shield-alt"></i> Important Terms & Conditions</h3>
+    <p>All bonuses including ₹100 Gift Code and ₹500 Signup Bonus are subject to terms & conditions. Bonuses are credited after successful registration and verification. The gift code is redeemable only once per user. This website is an affiliate partner and promotes responsible entertainment. Participants must be 18+ years old. Play wisely – games are for fun and skill development.</p>
   </div>
   <footer>
-    <p>© 2025 Jai Club — Ultimate Gaming Hub. All trademarks belong to their respective owners. <br>
-    <strong>Jai Club Login | Jai Club Register | Play Fun Games Online</strong></p>
+    <p>© 2025 Jai Club — India's Most Rewarding Gaming Platform. <br>
+    <strong>Jai Club Login | Jai Club Register | Get ₹100 Gift Code | Signup ₹500 Bonus</strong></p>
   </footer>
 </div>
 
 <script>
-  // Enhanced random name generator for live activity
-  const firstNames = ["Felix", "Aarav", "Sofia", "Raj", "Neha", "Kai", "Maya", "Jordan", "Riley", "Sam", "Leo", "Zara", "Ethan", "Luna", "Arjun", "Tara"];
-  const actions = ["is playing", "just won", "is crushing", "is exploring", "unlocked", "dominating"];
+  // Enhanced live activity updates with bonus-themed messages
+  const winners = ["Rahul S.", "Priya K.", "Amit S.", "Neha V.", "Vikram J.", "Sneha M.", "Rohit T.", "Pooja D."];
+  const bonusMessages = [
+    "just won ₹500 bonus!", "claimed ₹100 gift code!", "hit the jackpot!",
+    "unlocked ₹200 reward!", "is on a winning streak!", "got the signup bonus!",
+    "shared ₹100 gift with friends!", "leveled up & earned ₹300!"
+  ];
 
-  function randomLiveStatus() {
-    let name = firstNames[Math.floor(Math.random() * firstNames.length)] + Math.floor(Math.random() * 900 + 100);
-    let action = actions[Math.floor(Math.random() * actions.length)];
-    let suffix = "";
-    if (action === "just won") suffix = " a Jackpot!";
-    else if (action === "unlocked") suffix = " a new level!";
-    else if (action === "dominating") suffix = " the leaderboard!";
-    else suffix = " right now!";
-    return `${name} ${action}${suffix}`;
+  function getRandomStatus() {
+    let name = winners[Math.floor(Math.random() * winners.length)];
+    let msg = bonusMessages[Math.floor(Math.random() * bonusMessages.length)];
+    return `${name} ${msg}`;
   }
 
   function updateWins() {
     let html = "";
     for (let i = 0; i < 5; i++) {
-      html += `<div class="win-item"><i class="fas fa-circle" style="color: #ffd700; font-size: 10px; margin-right: 12px;"></i> ${randomLiveStatus()}</div>`;
+      html += `<div class="win-item"><i class="fas fa-circle" style="color: #ffd700; font-size: 10px; margin-right: 12px;"></i> 🔥 ${getRandomStatus()}</div>`;
     }
     document.getElementById("winList").innerHTML = html;
   }
 
-  setInterval(updateWins, 3200);
+  setInterval(updateWins, 2800);
   updateWins();
 
-  // Add smooth external link tracking
-  document.querySelectorAll('button[onclick*="window.open"]').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      gtag('event', 'click', { 'event_category': 'engagement', 'event_label': 'register_login_or_telegram' });
+  // Track button clicks for analytics (optional)
+  function trackBonusClick(type) {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'click', { 'event_category': 'bonus', 'event_label': type });
+    }
+  }
+  document.querySelectorAll('.bonus-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      let text = btn.innerText.includes('₹100') ? 'gift_code' : 'signup_bonus';
+      trackBonusClick(text);
     });
   });
 </script>
